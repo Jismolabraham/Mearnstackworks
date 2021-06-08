@@ -1,0 +1,17 @@
+div{
+    color: red;
+    width: 200px;
+    height: 50px;
+    border: 1px solid red;
+}
+.top{
+    margin-left: 343px;
+    margin-right: 50px;
+    margin-top: 20px;
+    padding: 40px;
+}
+.bottom
+{
+    margin-top: 20%;
+    margin-left: 365px;
+}

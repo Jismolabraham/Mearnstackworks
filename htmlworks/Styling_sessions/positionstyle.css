@@ -1,0 +1,15 @@
+div{
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+}
+.section1{
+                      
+    background-color: blue;
+}
+.section2{
+    background-color: brown;
+}
+.section3{
+    background-color: crimson;
+}

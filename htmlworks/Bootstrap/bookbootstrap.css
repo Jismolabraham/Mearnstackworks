@@ -1,0 +1,34 @@
+header{
+    width: 100%;
+    height: 60px;
+    background-color: silver;
+    border: 1px solid grey;
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    /* align-content: center; */
+    /* text-decration: none; */
+    /* paddingo: 20px; */
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+}
+a:hover
+{
+    background-color: burlywood;
+}
+.detail{
+    margin-top: 25px;
+    
+}
+.flex{
+    display: flex;
+    /* border: 1px solid grey; */
+    
+}
+
+.style{
+    border: 1px solid grey;
+}

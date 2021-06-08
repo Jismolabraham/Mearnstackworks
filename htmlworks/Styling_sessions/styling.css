@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+body{
+    background-color: black;
+}
+.Head
+{
+    font-family: 'Odibee Sans', cursive;
+    text-align: center;
+    text-decoration: underline;
+    color:white
+}
+/* to select one class we need to use '.' and class name
+to select id we need to use '#' and id name */
+
+.state{
+    border:  1px solid green;
+    color: brown;
+    background-color: tomato;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    float: left;
+}
+.tvm
+{
+    border: 1px solid white;
+    background-color: teal;
+}
+.ekm{
+    border: 1px solid greenyellow;
+    background-color: hotpink;
+}
+.hospital{
+    border: 1px solid brown;
+    background-color: cornsilk;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    float: left;
+
+}
+.pkd{
+    border: 1px solid goldenrod;
+    background-color: gold;
+}
+.idk
+{
+  border: 1px solid coral;
+  background-color: aqua;  
+}
+

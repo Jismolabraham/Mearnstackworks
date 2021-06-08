@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+.parent{
+    height: 120px;
+    width: 450px;
+    border: 1px solid black;
+    background-color: black;
+    position: relative;
+    margin-left: 28%;
+    margin-top: 90px;
+}
+.child1, .child2, .child3, .child4, .child5{
+    height: 100px;
+    width: 70px;
+    
+
+}
+.child1{
+    position: absolute;
+    border: 1px solid black;
+    background-color: blueviolet;
+    top: 5px;
+    left: 5%;
+}
+.child2{
+    position: absolute;
+    border: 1px solid black;
+    background-color: plum;
+    top: 5px;
+    left:23%;
+
+}
+.child3{
+    position: absolute;
+    border: 1px solid black;
+    background-color:paleturquoise;
+    top: 5px;
+    left:41%;
+}
+.child4{
+    position: absolute;
+    border: 1px solid black;
+    background-color:greenyellow;
+    top: 5px;
+    left: 59%;
+}
+.child5{
+    position: absolute;
+    border: 1px solid black;
+    background-color:mediumaquamarine;
+    top: 5px;
+    left: 77%;
+}
+
+.head{
+    text-align: center;
+    color: chartreuse;
+}

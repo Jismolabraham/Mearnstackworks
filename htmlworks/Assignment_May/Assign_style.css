@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+
+/* body{
+    background-color: black;
+
+} */
+.heading{
+    font-family: 'Odibee Sans', cursive;
+    color: white;
+    text-align: center;
+    color:font-family: 'Odibee Sans', cursive;white;
+}
+.image{
+    border: 1px solid red;
+    width: 400px;
+    height: 300px;
+    float: left;
+    /* better give % rather than pixel bcz.. 
+    it will change according to screen */
+}
+.image img
+{
+    width: 100%;
+    height: 300px;
+}
+.details1{
+    
+    border: 1px solid;
+    width: 400px;
+    height: 220px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    float: left;
+
+
+}
+.two
+{
+    background-color: tomato;
+}
+.row{
+width: 100%;
+}
+.col{
+float: left;
+width: 33%;
+border: 1px solid ;
+}
+.row img
+{
+    width: 100%;
+    height: 300px; 
+}

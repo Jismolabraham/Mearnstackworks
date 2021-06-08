@@ -1,0 +1,37 @@
+  body{
+      height: 1200px;
+  }
+  .parent{
+      width: 800px;
+      height: 600px;
+      background-color: darkcyan;
+      border: 1px solid black;
+      position:relative;
+      /* display: flex;
+      justify-content: space-evenly; */
+
+  }   
+  .child1, .child2, .child3{
+      width: 100px;
+      height: 100px;
+      
+  }            
+  .child1{
+      background-color: coral;
+      position:absolute;
+      left:30%
+      top:5px;
+      
+  }
+  .child2{
+      background-color: crimson;
+      position:absolute;
+      left:15%;
+      top:5px;
+  }
+  .child3{
+      position:absolute;
+      background-color: darkgoldenrod;
+      left:2%;
+      top:5px;
+  }
