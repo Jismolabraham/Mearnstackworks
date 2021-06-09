@@ -1,0 +1,40 @@
+.row{
+    width: 100%;
+    height: 500px;
+    background-color:pink;
+    display: flex;
+    flex-direction: row;
+}
+.col{
+    width: 30%;
+    height: 150px;
+}
+col:nth-child(1){
+    background-color: teal;
+}
+col:nth-child(2)
+{
+    background-color: chartreuse;
+}
+col:nth-child(3)
+{
+    background-color: cornflowerblue;
+}
+@media(max-width:500px){
+    .row{
+    /* /* flex-direction:column; */
+    align-items: center;
+    justify-content: space-evenly; */
+    }
+
+.col{
+    width: 100%;\
+    
+}
+.col:nth-child(2)
+{
+    display: none;
+}
+
+}
+
