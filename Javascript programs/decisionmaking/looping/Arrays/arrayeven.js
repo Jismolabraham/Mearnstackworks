@@ -9,5 +9,7 @@ var sum=0;
 //     sum+=eve;
 // }
 // console.log(`total ${sum}`);
-even.push(1000)
-console.log(even)
+// even.push(320)
+// console.log(even);
+even.pop()
+console.log(even);
