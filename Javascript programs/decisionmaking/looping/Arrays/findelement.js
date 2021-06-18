@@ -13,7 +13,9 @@ for (let num of arr)
         break;
     }
    cnt++; 
+ 
 }
+
 if(flag!=0)
 {
     console.log(`the given element is present`);
