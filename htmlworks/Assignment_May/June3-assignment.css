@@ -138,13 +138,49 @@ header a:hover{
 .parent
 {
     width: 1000%;
-    height:500px ;
+    height:400px ;
     background-color: black;
     position: relative;
     display: flex;
 }
-.child{
+.child1{
     position: absolute;
     margin-top: 50px;
     margin-left: 50px;
+}
+.child2
+{
+    position: absolute;
+    /* align-items: center; */
+    color:white;
+    margin-top: 50px;
+    margin-left: 350px;
+}
+.footerlist a
+{
+    text-decoration: none;
+    color: white;
+    
+}
+.child3
+{
+    position: absolute;
+    /* align-items: center; */
+    color:white;
+    margin-top: 50px;
+    margin-left: 700px;
+}
+
+.child4
+{
+    position: absolute;
+    /* align-items: center; */
+    color:white;
+    margin-top: 50px;
+    margin-left: 950px;
+}
+.child4 a
+{
+    text-decoration: none;
+    color: white;
 }
