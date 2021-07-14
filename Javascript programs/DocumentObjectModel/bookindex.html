@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="col-4"></div>
+        <div class="col-4">
+            <input type="text" name="" id="bk_name" placeholder="book_name"><br>
+            <input type="text" name="" id="autor" placeholder="author"><br>
+            <input type="text" name="" id="price" placeholder="price"><br>
+            <input type="text" name="" id="copies" placeholder="copies"><br>
+            <button onclick="createbook()">Createbook</button>
+
+        </div>
+        <div class="col-4"></div>
+        <!-- <div class="col-4"></div> -->
+    </div>
+    <div class="container">
+        <button onclick="fetchallbooks()">List all books</button>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td>Book Name</td>
+                <td>Author</td>
+                <td>Price</td>
+                <td>Copies Avilable</td>
+            </tr>
+            <tbody id="dataarea">
+
+
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <input type="text" id="srch" placeholder="enter book name">
+            <button class="btn btn-success" onclick="findbook()">Find</button>
+        </div>
+        <div class="col-4"></div>
+
+    </div>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4" id="bookarea">
+
+        </div>
+        <div class="col-4"></div>
+    </div>
+
+</body>
+<script>
+    function findbook() {
+        let bname = srch.value;
+        if (bname in localStorage) {
+            let book = JSON.parse(localStorage.getItem(bname))
+            let html_data = `<div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">${book.book_name}</li>
+    <li class="list-group-item">${book.author}</li>
+    <li class="list-group-item">${book.amount}</li>
+    <li class="list-group-item">${book.qty}</li>
+  </ul>
+</div>`
+            bookarea.innerHTML = html_data
+
+        }
+        else
+        {
+            alert("the book does not exist")
+        }
+    }
+
+    function createbook() {
+        let book_name = bk_name.value;
+        let author = autor.value;
+        let amount = price.value;
+        let qty = copies.value
+        let book = {
+            book_name: book_name,
+            author: author,
+            amount: amount,
+            qty: qty
+
+        }
+
+
+        if (book_name in localStorage) {
+            localStorage.setItem(book_name, JSON.stringify(book))
+            location.reload(true)
+        }
+        else {
+            alert("book exist")
+        }
+
+    }
+    // alert("book created")
+    function fetchallbooks() {
+        let books = [];
+        for (let i = 0; i < localStorage.length; i++) {
+            let ke = localStorage.key(i);
+            let book = JSON.parse(localStorage.getItem(ke));
+            // console.log(book);
+            books.push(book)
+
+        }
+        // console.log(books);
+        populate(books);
+    }
+    function populate(books) {
+        let html_data = "";
+        for (let book of books) {
+            console.log(book);
+            html_data += `<tr><td>${book.book_name}</td> <td>${book.author}</td> <td>${book.amount}</td> <td>${book.qty}</td></tr>`
+            // console.log(html_data);
+        }
+        document.querySelector("#dataarea").innerHTML = html_data
+    }
+</script>
+
+</html>
+
+
+
+
+
+
+<!-- From Sajay N J to Everyone:  10:57 AM
+function findBook() {
+        let bname = srch.value;
+        if (bname in localStorage) {
+            let book = JSON.parse(localStorage.getItem(bname))
+            console.log(book);
+            let html_data = `<div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">${book.book_name}</li>
+                <li class="list-group-item">${book.author}</li>
+                <li class="list-group-item">${book.amount}</li>
+                <li class="list-group-item">${book.qty}</li>
+
+            </ul>
+            </div>`
+            resultarea.innerHTML=html_data
+
+        }
+        else {
+            alert("book not exist with this name")
+        }
+    } -->
